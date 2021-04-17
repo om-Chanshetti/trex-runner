@@ -38,7 +38,7 @@ function preload(){
 }
 
 function setup() {
- createCanvas(windowWidth, windowHeight);
+ createCanvas(windowWidth,windowHeight);
   
   trex = createSprite(50, windowHeight-70,20,50);
   
@@ -54,7 +54,7 @@ function setup() {
   gameOver = createSprite(windowWidth/2,windowHeight/2);
   gameOver.addImage(gameOverImg);
   
-  restart = createSprite(windowWidth/2,windowHeight/2);
+  restart = createSprite(windowWidth/2,gameOver.y+50);
   restart.addImage(restartImg);
   
   gameOver.scale = 0.5;
